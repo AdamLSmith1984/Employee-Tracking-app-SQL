@@ -62,13 +62,13 @@ EXIT;
 node server.js or npm run start
 ```
 
-### Command Line Example
-![Command line example](https://drive.google.com/file/d/1ooS5quIPPxmgOhfhsIa8bsUOjmsu8BCG/view)
+## Links
+- [GitHub Repository](https://github.com/AdamLSmith1984/Employee-Tracking-app-SQL.git) 
+- [Walkthrough Video Demonstration](https://drive.google.com/file/d/1ooS5quIPPxmgOhfhsIa8bsUOjmsu8BCG/view)
 
 ## Technology Used
 * JavaScript
 * Node.js
 * MySQL
 * Inquirer
-
 
