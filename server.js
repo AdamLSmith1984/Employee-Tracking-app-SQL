@@ -1,6 +1,6 @@
 const express = require("express");
 const mysql = require("mysql2");
-const inquier = require("inquirer");
+const inquirer = require("inquirer");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
@@ -20,7 +20,7 @@ const db = mysql.createConnection({
 
 
 const question = () => {
-    return inquier.prompt([
+    return inquirer.prompt([
         {
             type: "list",
             message: "What would you like to do?",
@@ -78,7 +78,7 @@ const init = () => {
                 }
             });
         } else if (question === "Add Department") {
-            inquier.prompt([
+            inquirer.prompt([
                 {
                     type: "input",
                     message: "What is the name of the department?",
@@ -99,7 +99,7 @@ const init = () => {
                 });
         });
     } else if (question === "Add Role") {
-        inquier.prompt([
+        inquirer.prompt([
             {
                 type: "input",
                 message: "What is the name of the role?",
@@ -139,7 +139,7 @@ const init = () => {
             });
         })
     } else if (question === "Add Employee") {
-        inquier.prompt([
+        inquirer.prompt([
             {
                 type: "input",
                 message: "What is the employee's first name?",
@@ -192,7 +192,7 @@ const init = () => {
             });
         });
     } else if (question === "Update Employee Role") {
-        inquier.prompt([
+        inquirer.prompt([
             {
                 type: "list",
                 message: "Which Employee's role do you want to update?",
